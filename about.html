@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Shivam Kogar - About</title>
     <style>
         body {
             font-family: Calibri, sans-serif;
-            background-color: rgb(255, 255, 255); /* Light blue background */
-            color: #007BFF; /* Text color */
+            background-color: rgb(255, 255, 255);
+            color: #000000;
             margin: 0;
             padding: 0;
             height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: left;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
+            flex-direction: column;
         }
         nav {
             position: absolute;
             top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 70%;
+            transform: translateX(0%);
             margin-bottom: 20px;
         }
         nav a {
-            color: #007BFF; /* Text color for links */
+            color: #000000;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
@@ -40,9 +41,12 @@
             padding: 20px;
             box-sizing: border-box;
         }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
+        h1, h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -54,7 +58,26 @@
     </nav>
     <div class="container">
         <h1>About Me</h1>
-        <p>This is the about page. Add information about yourself here.</p>
+        
+        <section>
+            <h2>Background</h2>
+            <p>Hi, I'm Shivam Kogar. My journey has been shaped by curiosity and a love for problem-solving, leading me to explore various interests and experiences.</p>
+        </section>
+
+        <section>
+            <h2>Interests</h2>
+            <p>I'm passionate about swimming, running, and spending time outdoors. I also enjoy diving into creative projects like game development and exploring new ideas in technology and science.</p>
+        </section>
+
+        <section>
+            <h2>Beyond the Everyday</h2>
+            <p>When I’m not immersed in personal projects, I enjoy relaxing with a good book, listening to music, or spending quality time with friends. Life is a balance between adventure and quiet moments, and I embrace both.</p>
+        </section>
+
+        <section>
+            <h2>My Perspective</h2>
+            <p>I believe that curiosity and exploration are key to growth. Whether it's through new hobbies, conversations, or unexpected experiences, I'm always eager to discover more about the world and myself.</p>
+        </section>
     </div>
 </body>
 </html>
