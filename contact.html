@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Name - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Shivam Kogar - Contact</title>
     <style>
         body {
             font-family: Calibri, sans-serif;
-            background-color: rgb(226, 236, 255); /* Light blue background */
-            color: #ffffff; /* Text color */
+            background-color: rgb(255, 255, 255);
+            color: #000000;
             margin: 0;
             padding: 0;
             height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            justify-content: left;
+            align-items: left;
+            text-align: left;
             flex-direction: column;
         }
         nav {
             position: absolute;
             top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 70%;
+            transform: translateX(0%);
             margin-bottom: 20px;
         }
         nav a {
-            color: #ffffff; /* Text color for links */
+            color: #000000;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
@@ -44,6 +45,26 @@
             font-size: 2.5em;
             margin-bottom: 20px;
         }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea, button {
+            font-family: Calibri, sans-serif;
+            font-size: 1em;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #000000;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #444444;
+        }
     </style>
 </head>
 <body>
@@ -54,7 +75,18 @@
     </nav>
     <div class="container">
         <h1>Contact Me</h1>
-        <p>Here's how you can contact me...</p>
+        <form action="mailto:shivamkogar@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
     </div>
 </body>
 </html>
