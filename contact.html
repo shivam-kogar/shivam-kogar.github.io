@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivam Kogar - Contact</title>
 
-    <!-- LaTeX-style font --> 
+    <!-- LaTeX-style font -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 
     <style>
@@ -63,9 +63,11 @@
         }
 
         input, textarea {
-            font-family: 'KaTeX_Main', serif;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'KaTeX_Main', 'Latin Modern Roman', serif;
             font-size: 1em;
-            padding: 10px;
+            padding: 10px 0;
             border: none;
             border-bottom: 1px solid #000;
             outline: none;
@@ -83,7 +85,7 @@
         button {
             margin-top: 20px;
             padding: 10px;
-            font-family: 'KaTeX_Main', serif;
+            font-family: 'KaTeX_Main', 'Latin Modern Roman', serif;
             font-size: 1em;
             border: 1px solid #000;
             background-color: #000;
@@ -125,7 +127,7 @@
         <h1>Contact Me</h1>
         <div class="subtitle">Feel free to reach out — I’d be happy to connect.</div>
 
-        <form action="mailto:shivamkogar@gmail.com" method="post" enctype="text/plain">
+        <form action="https://formspree.io/f/xreyjzag" method="POST">
             <div>
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name" required>
