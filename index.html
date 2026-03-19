@@ -7,23 +7,22 @@
     <title>Shivam Kogar - Home</title>
 
 ```
-<!-- LaTeX-style font -->
-<link href="https://fonts.cdnfonts.com/css/computer-modern" rel="stylesheet">
+<!-- TRUE LaTeX-style font -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 
 <style>
     body {
-        font-family: 'Computer Modern', serif;
+        font-family: 'KaTeX_Main', 'Latin Modern Roman', serif;
         background-color: #ffffff;
         color: #000000;
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: column;
+        line-height: 1.6;
     }
 
     nav {
         position: absolute;
-        top: 10px;
+        top: 20px;
         right: 40px;
     }
 
@@ -39,13 +38,18 @@
     }
 
     .container {
-        max-width: 800px;
-        padding: 40px 20px;
+        max-width: 700px;       /* more LaTeX-like width */
+        margin: 0 auto;         /* 🔥 centers the page */
+        padding: 60px 20px 40px;
     }
 
     h1 {
         font-size: 2.5em;
         margin-bottom: 20px;
+    }
+
+    p {
+        text-align: justify;    /* LaTeX-style text */
     }
 
     ol {
