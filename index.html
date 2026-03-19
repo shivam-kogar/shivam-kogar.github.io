@@ -1,92 +1,122 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
     <title>Shivam Kogar - Home</title>
-    <style>
-        
-        body {
-            <link href="https://fonts.cdnfonts.com/css/computer-modern" rel="stylesheet">
-            <style>
-              body {
-                font-family: 'Computer Modern', serif;
-              }
-            </style>
-            background-color: rgb(255, 255, 255); /* Light blue background */
-            color: #000000; /* Text color */
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: left;
-            align-items: left;
-            text-align: left;
-            flex-direction: column;
-        }
-        nav {
-            position: absolute;
-            top: 10px;
-            left: 70%;
-            transform: translateX(0%);
-            margin-bottom: 20px;
-        }
-        nav a {
-            color: #000000; /* Text color for links */
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-    </style>
+
+```
+<!-- LaTeX-style font -->
+<link href="https://fonts.cdnfonts.com/css/computer-modern" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Computer Modern', serif;
+        background-color: #ffffff;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+    }
+
+    nav a {
+        color: #000000;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2em;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 800px;
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    ol {
+        padding-left: 20px;
+    }
+
+    .image-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .image-container img {
+        width: 400px;
+        height: auto;
+    }
+
+    .caption {
+        font-size: 0.9em;
+        color: #444;
+        margin-top: 8px;
+    }
+</style>
+```
+
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        
-    </nav>
-    <div class="container">
-        <h1>
-            Shivam Kogar 
-        </h1>
-        <p>I am an undergraduate student at Brown University studying applied mathematics and international affairs. 
-        </p>
-        <p>
-            My mathematical interests span probability, statistics and deterministic modeling. As part of the Division of Applied Mathematics's Directed Reading Program, I have independently studied mathematical
-            areas of interest under the supervision of graduate students. In Fall 2024, I studied <i>Topics in Random Matrix Theory</i>, advised by Jake Mundo, and in 
-            Spring 2025 I studied <i>Stochastic Thermodynamics</i>, advised by Stanley Nicholson. I am motivated by both theory and application, and I hope to pursue graduate studies in applied mathematics or statistics in Fall 2027.
-        </p>  
-        <p>
-            I believe that kindness and compassion should guide all mathematical pursuits. I am a strong believer in Federico Ardila's axioms:
-            Axiom 1. Mathematical potential is equally present in different groups, irrespective of geographic, demographic, and economic boundaries.
-            Axiom 2. Everyone can have joyful, meaningful, and empowering mathematical experiences.
-            Axiom 3. Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.
-            Axiom 4. Every student deserves to be treated with dignity and respect.
-        </p>  
-        <p> 
-            In Summer 2025, I was supported by an Undergraduate Teaching & Research Award (UTRA) Fellowship,
-            working with Professor Richard Stratt in the Department of Chemistry at Brown, using random-graph models
-            to simulate diffusion in supercooled liquids. 
-        </p> 
-        <p> 
-            In Summer 2026, I am grateful to be participating in the Fields Undergraduate Summer Research Program in Toronto, Canada.
-        </p> 
-        <img src="shivam-kogar-2025.jpg" alt="This is me!" width="400" height="550"></img>
+
+```
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>Shivam Kogar</h1>
+
+    <p>
+        I am an undergraduate student at Brown University studying applied mathematics and international affairs.
+    </p>
+
+    <p>
+        My mathematical interests span probability, statistics, and deterministic modeling. As part of the Division of Applied Mathematics's Directed Reading Program, I have independently studied mathematical areas of interest under the supervision of graduate students. In Fall 2024, I studied <i>Topics in Random Matrix Theory</i>, advised by Jake Mundo, and in Spring 2025 I studied <i>Stochastic Thermodynamics</i>, advised by Stanley Nicholson. I am motivated by both theory and application, and I hope to pursue graduate studies in applied mathematics or statistics in Fall 2027.
+    </p>
+
+    <p>
+        I believe that kindness and compassion should guide all mathematical pursuits. I am a strong believer in Federico Ardila's axioms:
+    </p>
+
+    <ol>
+        <li>Mathematical potential is equally present in different groups, irrespective of geographic, demographic, and economic boundaries.</li>
+        <li>Everyone can have joyful, meaningful, and empowering mathematical experiences.</li>
+        <li>Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.</li>
+        <li>Every student deserves to be treated with dignity and respect.</li>
+    </ol>
+
+    <p>
+        In Summer 2025, I was supported by an Undergraduate Teaching & Research Award (UTRA) Fellowship, working with Professor Richard Stratt in the Department of Chemistry at Brown, using random-graph models to simulate diffusion in supercooled liquids.
+    </p>
+
+    <p>
+        In Summer 2026, I am grateful to be participating in the Fields Undergraduate Summer Research Program in Toronto, Canada.
+    </p>
+
+    <div class="image-container">
+        <img src="shivam-kogar-2025.jpg" alt="Photo of Shivam Kogar">
+        <div class="caption">Shivam Kogar, 2025</div>
     </div>
+</div>
+```
+
 </body>
 </html>
