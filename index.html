@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Kogar - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivam Kogar - Home</title>
 
-<!-- TRUE LaTeX-style font -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 
 <style>
@@ -37,32 +35,54 @@
     }
 
     .container {
-        max-width: 700px;       /* more LaTeX-like width */
-        margin: 0 auto;         /* 🔥 centers the page */
-        padding: 60px 20px 40px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 70px 24px 50px;
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 230px;
+        gap: 35px;
+        align-items: start;
     }
 
     h1 {
         font-size: 2.5em;
+        margin-top: 0;
         margin-bottom: 20px;
     }
 
     p {
-        text-align: justify;    /* LaTeX-style text */
+        text-align: justify;
     }
 
     ol {
-        padding-left: 20px;
+        padding-left: 22px;
+    }
+
+    .side-image {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .side-image img {
+        width: 100%;
+        max-width: 230px;
+        height: auto;
+        border-radius: 6px;
     }
 
     .image-container {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 38px;
     }
 
     .image-container img {
-        width: 400px;
+        width: 420px;
+        max-width: 100%;
         height: auto;
+        border-radius: 6px;
     }
 
     .caption {
@@ -70,13 +90,35 @@
         color: #444;
         margin-top: 8px;
     }
+
+    @media (max-width: 800px) {
+        nav {
+            position: static;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            padding-top: 35px;
+        }
+
+        .intro {
+            display: block;
+        }
+
+        .side-image {
+            margin: 25px auto 30px;
+        }
+
+        .side-image img {
+            max-width: 320px;
+        }
+    }
 </style>
-
-
 </head>
 
 <body>
-
 
 <nav>
     <a href="index.html">Home</a>
@@ -85,39 +127,49 @@
 </nav>
 
 <div class="container">
-    <h1>Shivam Kogar</h1>
 
-    <p>
-        I am a fourth-year undergraduate at Brown University working towards my Bachelors of Science in Applied Mathematics.
-    </p>
+    <div class="intro">
+        <main>
+            <h1>Shivam Kogar</h1>
 
-    <p>
-        My mathematical interests span probabilistic and deterministic modeling, statistical mechanics, and numerical experimentation. As part of the Division of Applied Mathematics's Directed Reading Program, I have independently studied mathematical areas of interest under the supervision of graduate students. In Fall 2024, I studied <i>Topics in Random Matrix Theory</i>, advised by Jake Mundo, and in Spring 2025 I studied <i>Stochastic Thermodynamics</i>, advised by Stanley Nicholson. 
-     </p>   
-    <p>
-        In Summer 2025, I was supported by an Undergraduate Teaching & Research Award (UTRA) Fellowship, working with Dr. Richard Stratt (Brown University), using random-graph models to simulate diffusion in supercooled liquids.
-        In Summer 2026, I am grateful to be participating in the Fields Undergraduate Summer Research Program in Toronto, Canada, working on dimension reduction in chemical spaces under the supervision of Dr. Ricardo Baptista (University of Toronto) and Dr. Farnaz Heidar-Zadeh (Queens University).
-I am motivated by both theory and application, and I hope to pursue graduate studies in applied mathematics or statistics in Fall 2027.
-    </p>
+            <p>
+                I am a fourth-year undergraduate at Brown University working towards my Bachelors of Science in Applied Mathematics.
+            </p>
 
+            <p>
+                My mathematical interests span probabilistic and deterministic modeling, statistical mechanics, and numerical experimentation. As part of the Division of Applied Mathematics's Directed Reading Program, I have independently studied mathematical areas of interest under the supervision of graduate students. In Fall 2024, I studied <i>Topics in Random Matrix Theory</i>, advised by Jake Mundo, and in Spring 2025 I studied <i>Stochastic Thermodynamics</i>, advised by Stanley Nicholson.
+            </p>
 
-    <p>
-        I believe that kindness and compassion should guide all mathematical pursuits. I am a firm believer in Federico Ardila's axioms:
-    </p>
+            <p>
+                In Summer 2025, I was supported by an Undergraduate Teaching & Research Award (UTRA) Fellowship, working with Dr. Richard Stratt (Brown University), using random-graph models to simulate diffusion in supercooled liquids.
+                In Summer 2026, I am grateful to be participating in the Fields Undergraduate Summer Research Program in Toronto, Canada, working on dimension reduction in chemical spaces under the supervision of Dr. Ricardo Baptista (University of Toronto) and Dr. Farnaz Heidar-Zadeh (Queens University).
+                I am motivated by both theory and application, and I hope to pursue graduate studies in applied mathematics or statistics in Fall 2027.
+            </p>
 
-    <ol>
-        <li>Mathematical potential is equally present in different groups, irrespective of geographic, demographic, and economic boundaries.</li>
-        <li>Everyone can have joyful, meaningful, and empowering mathematical experiences.</li>
-        <li>Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.</li>
-        <li>Every student deserves to be treated with dignity and respect.</li>
-    </ol>
+            <p>
+                I believe that kindness and compassion should guide all mathematical pursuits. I am a firm believer in Federico Ardila's axioms:
+            </p>
+
+            <ol>
+                <li>Mathematical potential is equally present in different groups, irrespective of geographic, demographic, and economic boundaries.</li>
+                <li>Everyone can have joyful, meaningful, and empowering mathematical experiences.</li>
+                <li>Mathematics is a powerful, malleable tool that can be shaped and used differently by various communities to serve their needs.</li>
+                <li>Every student deserves to be treated with dignity and respect.</li>
+            </ol>
+        </main>
+
+        <aside class="side-image">
+            <img src="Schramm-Loewner_Evolution.png" alt="Schramm-Loewner evolution visualization">
+            <div class="caption">A mathematical visualization.</div>
+        </aside>
+    </div>
 
     <div class="image-container">
         <img src="shivam-kogar-2025.jpg" alt="Photo of Shivam Kogar">
         <div class="caption">Fun times in NYC!</div>
     </div>
-</div>
 
+</div>
 
 </body>
 </html>
